@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sample Website</title>
+  <link rel="stylesheet" href="style2.css"/>
+  <style>
+    /* Base styles for the page */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+
+    header {
+      position: relative;
+      z-index: 2;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      text-transform: uppercase;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links li {
+      margin: 0 15px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #f39c12;
+    }
+
+    
+    .navbar:hover {
+      transform: rotate(10deg); 
+    }
+
+    .logo:hover {
+      transform: scale(1.1); 
+    }
+
+    
+    header {
+      perspective: 800px; 
+    }
+
+    .navbar {
+      transform-style: preserve-3d; 
+    }
+
+    
+    .navbar:hover {
+      transform: rotateY(15deg); 
+    }
+
+    
+    section.form {
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  
+  <header>
+    <nav class="navbar">
+      <div class="logo">MySite</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Responsive</a></li>
+        <li><a href="forms.html">form</a></li>
+        <li><a href="contanct.html">Transform</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section class="form">
+    <h1>Transform Page </h1>
+        <img src="image4.jpg" alt="Italian Trulli">
+        <img src="image5.jpg" style="max-width:100%;height:auto;" style="transform: rotate(-20deg);">
+        
+    
+    
+  </section>
+ 
+  <footer>
+    <p>&copy; 2025 MySite. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
