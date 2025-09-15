@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Example 5</title>
+</head>
+<body>
+
+<input type="text" id="nameInput" placeholder="Enter your name" />
+<button id="greetBtn">Greet Me</button>
+<p id="greeting"></p>
+
+<script>
+  const button = document.getElementById('greetBtn');
+  const input = document.getElementById('nameInput');
+  const greeting = document.getElementById('greeting');
+
+  button.addEventListener('click', () => {
+    const name = input.value.trim();
+    if (name) {
+      greeting.textContent = `Hello, ${name}! Nice to meet you.`;
+    } else {
+      greeting.textContent = 'Please enter your name above.';
+    }
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head><title>Example 3</title></head>
+<body>
+  <button id="toggleBtn">Show/Hide Text</button>
+  <p id="text" style="display:none;">Here is some hidden text!</p>
+
+  <script>
+    const toggleBtn = document.getElementById('toggleBtn');
+    const text = document.getElementById('text');
+
+    toggleBtn.addEventListener('click', () => {
+      if (text.style.display === 'none') {
+        text.style.display = 'block';
+      } else {
+        text.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>
